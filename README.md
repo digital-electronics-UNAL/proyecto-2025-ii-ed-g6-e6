@@ -45,7 +45,7 @@ sg90
 
 tcrt500
 <img width="1145" height="289" alt="image" src="https://github.com/user-attachments/assets/3cf85eea-2f2a-461f-90d2-74154ed9db7a" />
-ara garantizar la confiabilidad, el sistema incorpora un módulo de antirrebote (Debounce) que filtra el ruido electromecánico de los sensores. La simulación correspondiente muestra cómo una señal de entrada ruidosa (sensor_in), con oscilaciones rápidas entre 0 y 1, es limpiada mediante un filtro temporal. Un contador se incrementa solo cuando la entrada se mantiene estable durante un tiempo mínimo predefinido (MIN_TIME), asegurando que los cambios de estado detectados por la lógica de control sean válidos y estables, previniendo así activaciones espurias.
+Para controlar el movimienmto de los servomotores el los sensores tcr500o se encargan de esto para garantizar la confiabilidad, el sistema incorpora un módulo de antirrebote que filtra el ruido electromecánico de los sensores. La simulación correspondiente muestra cómo una señal de entrada ruidosa, con oscilaciones rápidas entre 0 y 1, es limpiada mediante un filtro temporal. Un contador se incrementa solo cuando la entrada se mantiene estable durante un tiempo mínimo predefinido, asegurando que los cambios de estado detectados por la lógica de control sean válidos y estables, previniendo así activaciones insesarias.
 
 conjunto 
 
@@ -55,3 +55,6 @@ Simulación del Sistema General representa la integración de todos los módulos
 
 ## Evidencias de implementación
 
+Debido a las limitaciones de la herramienta que impiden incrustar contenido multimedia directamente, adjunto a continuación un enlace a un video demostrativo donde se muestra la funcionalidad operativa completa del proyecto
+
+https://youtube.com/shorts/Uo1c1HRO6AU?feature=share
