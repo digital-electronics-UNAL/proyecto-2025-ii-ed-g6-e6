@@ -14,9 +14,12 @@ Farma-Synchro: Sistema Inteligente de Dispensación de Medicamentos
 
 
 ## Diagramas de la arquitectura
+<img width="8785" height="8920" alt="Untitled diagram-2025-12-10-131716" src="https://github.com/user-attachments/assets/a8e1f3b5-d3e2-431e-8317-7f134fc4a51a" />
 
+<img width="6040" height="3761" alt="Untitled diagram-2025-12-10-130017" src="https://github.com/user-attachments/assets/6f7a7b79-0288-4045-89b2-950387ebecf3" />
 
 ## Simulaciones
+
 
 
 ## Evidencias de implementación
