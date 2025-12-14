@@ -35,15 +35,23 @@ El sistema implementa un generador PWM compartido para ambos servomotores, utili
 <img width="6040" height="3761" alt="Untitled diagram-2025-12-10-130017" src="https://github.com/user-attachments/assets/6f7a7b79-0288-4045-89b2-950387ebecf3" />
 
 ## Simulaciones}
-sg90
-<img width="1148" height="436" alt="image" src="https://github.com/user-attachments/assets/94eb7125-8524-4392-8cf9-fe90954a107e" />
-tcrt500
-<img width="1145" height="289" alt="image" src="https://github.com/user-attachments/assets/3cf85eea-2f2a-461f-90d2-74154ed9db7a" />
 mg996
 <img width="1141" height="432" alt="image" src="https://github.com/user-attachments/assets/69ea50e7-ca9b-4ccd-816c-36115eebf6e5" />
+
+Simulación de la Generación de Señal PWM se visualiza el funcionamiento del módulo encargado de controlar la posición de los servomotores del pastillero. Las gráficas muestran cómo el contador principal (pwm_counter) incrementa linealmente hasta alcanzar el valor del periodo establecido de 20 ms, momento en el cual se reinicia para crear una frecuencia de 50 Hz. Se observa claramente la comparación entre este contador y el ancho de pulso deseado (pulse_width), lo que genera una señal cuadrada de salida con un ciclo de trabajo variable. Esta simulación valida que el sistema es capaz de generar los tiempos precisos necesarios para que el servomotor SG90 abra y cierre la compuerta del dispensador, o para que el motor MG996R rote a la velocidad adecuada.
+
+sg90
+<img width="1148" height="436" alt="image" src="https://github.com/user-attachments/assets/94eb7125-8524-4392-8cf9-fe90954a107e" />
+
+tcrt500
+<img width="1145" height="289" alt="image" src="https://github.com/user-attachments/assets/3cf85eea-2f2a-461f-90d2-74154ed9db7a" />
+ara garantizar la confiabilidad, el sistema incorpora un módulo de antirrebote (Debounce) que filtra el ruido electromecánico de los sensores. La simulación correspondiente muestra cómo una señal de entrada ruidosa (sensor_in), con oscilaciones rápidas entre 0 y 1, es limpiada mediante un filtro temporal. Un contador se incrementa solo cuando la entrada se mantiene estable durante un tiempo mínimo predefinido (MIN_TIME), asegurando que los cambios de estado detectados por la lógica de control sean válidos y estables, previniendo así activaciones espurias.
+
 conjunto 
+
 <img width="1555" height="916" alt="image" src="https://github.com/user-attachments/assets/ccc6859e-b48c-4bcc-98e2-b9013a502919" />
 
+Simulación del Sistema General representa la integración de todos los módulos operando en conjunto para la lógica del pastillero. Se observa la transición de estados del sistema : inicialmente, el motor (pwm_mg996r) de la ruleta  recibe una señal de movimiento continuo para buscar el siguiente compartimento. En el momento en que las señales de los sensores (sensor1-4) son validadas por el filtro antirrebote, el sistema cambia de estado, deteniendo inmediatamente el motor del carrusel y activando la secuencia del motor dispensador (pwm_sg90). Esta gráfica confirma la correcta sincronización entre la detección de la posición de cada casilla y la acción mecánica de entrega, asegurando que los motores nunca operen de forma conflictiva.
 
 ## Evidencias de implementación
 
