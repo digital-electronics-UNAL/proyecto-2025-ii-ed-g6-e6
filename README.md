@@ -9,6 +9,7 @@ Cristian Daniel Silva Rodriguez
 Farma-Synchro: Sistema Inteligente de Dispensación de Medicamentos
 
 # Documentación
+Debido a las limitaciones de la herramienta que impiden adjuntar archivos o carpetas directamente, comparto a continuación un enlace de acceso a una carpeta en Google Drive que contiene toda la documentación completa del proyecto:
 
 https://drive.google.com/drive/folders/1GaICHaaQqxpLlJLLew8hEMC9onwoEgyb?usp=sharing
 
