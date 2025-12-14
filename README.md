@@ -24,6 +24,8 @@ tcrt500
 <img width="1145" height="289" alt="image" src="https://github.com/user-attachments/assets/3cf85eea-2f2a-461f-90d2-74154ed9db7a" />
 mg996
 <img width="1141" height="432" alt="image" src="https://github.com/user-attachments/assets/69ea50e7-ca9b-4ccd-816c-36115eebf6e5" />
+conjunto 
+<img width="1555" height="916" alt="image" src="https://github.com/user-attachments/assets/ccc6859e-b48c-4bcc-98e2-b9013a502919" />
 
 
 ## Evidencias de implementación
