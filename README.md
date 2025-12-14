@@ -3,11 +3,13 @@
 
 # Integrantes
 
-
+Cristian Daniel Silva Rodriguez
 # Nombre del proyecto
-
+ 
+Farma-Synchro: Sistema Inteligente de Dispensación de Medicamentos
 
 # Documentación
+
 ## Descripción de la arquitectura
 
 
