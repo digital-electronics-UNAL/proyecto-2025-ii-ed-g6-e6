@@ -57,4 +57,4 @@ Simulación del Sistema General representa la integración de todos los módulos
 
 Debido a las limitaciones de la herramienta que impiden incrustar contenido multimedia directamente, adjunto a continuación un enlace a un video demostrativo donde se muestra la funcionalidad operativa completa del proyecto
 
-https://youtube.com/shorts/Uo1c1HRO6AU?feature=share
+[https://youtube.com/shorts/Uo1c1HRO6AU?feature=share](https://youtube.com/shorts/965AU6X6AMk?si=6iji46c8U63uGesC)
